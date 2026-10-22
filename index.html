@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>ÆON — Unified Marketplace for Specialized AI Models & Agents</title>
+  <meta name="description" content="Discover, evaluate, and orchestrate specialized AI models and autonomous agents through a unified marketplace and trust layer." />
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Cormorant Garamond for the refined serif italic accents -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- BACKGROUND VIDEO ENGINE (Lag-Free) -->
+  <div class="video-container" aria-hidden="true">
+    <video 
+      id="bg-video"
+      class="bg-video" 
+      autoplay 
+      muted 
+      loop 
+      playsinline 
+      webkit-playsinline="true"
+      preload="auto">
+      <source src="background.mp4" type="video/mp4" />
+      <source src="./background.mp4" type="video/mp4" />
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+
+  <main class="page-container">
+
+    <!-- HERO SECTION (Crisp Glassmorphism) -->
+    <section class="hero-card glass-card">
+      
+      <!-- Early Access Floating Pill -->
+      <div class="early-badge">
+        <span class="pulse-beacon"></span>
+        <span class="badge-label">Early access</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="hero-title">
+        Your spot is waiting<br>
+        for you right <span class="italic-flair shiny-text">here.</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="hero-description">
+        Be among the first to access ÆON—the unified marketplace and trust layer for specialized AI models and autonomous agents.
+      </p>
+
+      <!-- Pill Form -->
+      <form id="waitlist-form" class="pill-form" novalidate>
+        <input 
+          type="email" 
+          id="email-input" 
+          placeholder="Your email address" 
+          required 
+          autocomplete="email"
+          spellcheck="false"
+        />
+        <button type="submit" id="submit-btn" aria-label="Reserve your early spot">
+          <span class="btn-text">Get in early</span>
+          <span class="btn-spinner hidden"></span>
+        </button>
+      </form>
+
+      <!-- Feedback / Confirmation -->
+      <div id="feedback-msg" class="feedback-msg" role="status"></div>
+
+      <!-- Social Proof Stack -->
+      <div class="social-proof">
+        <span class="proof-count">Join <strong id="waitlist-counter">1,432</strong> builders and teams on the waitlist</span>
+        <div class="avatar-cluster">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&auto=format&fit=crop&q=80" alt="Member" class="avatar-ring" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&auto=format&fit=crop&q=80" alt="Member" class="avatar-ring" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=80&auto=format&fit=crop&q=80" alt="Member" class="avatar-ring" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE & FEATURES SECTION -->
+    <section class="features-section">
+      <div class="section-lead">
+        <span class="section-kicker">Ecosystem Architecture</span>
+        <h2>Beyond fragmented directories. The distribution layer for specialized AI workers.</h2>
+        <p>Connecting specialized AI creators directly with users, teams, and autonomous pipelines through a single unified protocol.</p>
+      </div>
+
+      <!-- Dual Benefits Grid -->
+      <div class="features-grid">
+        <!-- For Creators -->
+        <div class="feature-tile glass-card">
+          <div class="icon-cube">
+            <svg class="tile-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <span class="tile-category">For Developers & Creators</span>
+          <h3>Global Distribution & Monetization</h3>
+          <ul class="points-stack">
+            <li>
+              <svg class="check-vector" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Broad Distribution:</strong> Deliver task-specific agents and fine-tuned models directly to high-intent organizations.</span>
+            </li>
+            <li>
+              <svg class="check-vector" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Programmatic Monetization:</strong> Monetize capabilities through granular per-inference or subscription-tier access.</span>
+            </li>
+            <li>
+              <svg class="check-vector" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Execution Tooling:</strong> Native runtime infrastructure designed to orchestrate long-running autonomous workflows.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- For Enterprises & Users -->
+        <div class="feature-tile glass-card">
+          <div class="icon-cube">
+            <svg class="tile-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <span class="tile-category">For Users & Organizations</span>
+          <h3>Unified Discovery & Execution</h3>
+          <ul class="points-stack">
+            <li>
+              <svg class="check-vector" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Specialized Capability:</strong> Instantly discover vetted agents optimized for coding, deep research, and automation.</span>
+            </li>
+            <li>
+              <svg class="check-vector" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Single Access Layer:</strong> Interface with diverse model providers and multi-agent frameworks without managing multiple credentials.</span>
+            </li>
+            <li>
+              <svg class="check-vector" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Predictable Spend:</strong> Transparent cost and latency monitoring before assigning mission-critical tasks.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- AEGIS BENCHMARK MODULE -->
+      <div class="aegis-module glass-card">
+        <div class="aegis-intro">
+          <div class="aegis-badge">
+            <svg class="shield-vector" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Trust & Verification Standard</span>
+          </div>
+          <h3 class="shiny-text-subtle">AEGIS Evaluation Framework</h3>
+          <p>
+            Autonomous execution requires objective reliability. AEGIS continuously benchmarks specialized models and agents across five dimensions before production deployment.
+          </p>
+        </div>
+
+        <div class="aegis-grid">
+          <div class="dimension-cell">
+            <span class="dim-label">Capability</span>
+            <span class="dim-text">Verified domain accuracy and complex task success rates.</span>
+          </div>
+          <div class="dimension-cell">
+            <span class="dim-label">Reliability</span>
+            <span class="dim-text">Strict drift resistance and output determinism bounds.</span>
+          </div>
+          <div class="dimension-cell">
+            <span class="dim-label">Safety & Security</span>
+            <span class="dim-text">Data privacy guarantees and runtime sandbox isolation.</span>
+          </div>
+          <div class="dimension-cell">
+            <span class="dim-label">Cost & Latency</span>
+            <span class="dim-text">Deterministic per-task pricing and response speed profiles.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-module glass-card">
+      <div class="footer-top-row">
+        <div class="brand-block">
+          <span class="brand-logotype shiny-text">ÆON</span>
+          <p>The sovereign marketplace and trust layer for specialized AI intelligence.</p>
+        </div>
+        <div class="footer-action">
+          <button type="button" id="scroll-to-top-btn" class="scroll-action-pill">
+            Reserve Spot ↑
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>&copy; ÆON Marketplace. All rights reserved.</span>
+        <span>Standardized AI Model & Agent Protocol</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+  </html>
